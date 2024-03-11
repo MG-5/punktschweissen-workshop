@@ -1,0 +1,35 @@
+\setbeamertemplate{headline}% Headings
+{
+	\hspace*{0.02\textwidth}
+	\begin{minipage}[m]{0.3\textwidth}
+		\vspace*{1ex}
+		\includegraphics[height=8mm]{\netzlogo}
+	\end{minipage}
+	\begin{minipage}[m]{0.35\textwidth}
+		\centering
+		\vspace*{3ex}
+		\doctitle
+	\end{minipage}
+	\hfill
+	\begin{minipage}[m]{0.14\textwidth}
+		\vspace*{3ex}
+		 \hfill Folie:  \insertframenumber ~ / \inserttotalframenumber
+		\hspace*{0.1\textwidth}
+	\end{minipage}
+	\color{\mainColor}
+	\rule{\paperwidth}{1pt}
+}
+%
+%
+%
+\setbeamertemplate{footline} % Footer
+{
+	\color{\mainColor }
+	\rule{\paperwidth}{1pt}
+	\color{black}
+	\begin{minipage}[c]{\textwidth}
+		\vspace*{1ex}
+		\hspace*{0.02\textwidth} \docauthor \hfill  \DTMusedate{docdate} \hspace{0.02\textwidth}
+		\vspace*{2ex}
+	\end{minipage}
+}

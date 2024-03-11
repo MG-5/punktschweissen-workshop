@@ -1,0 +1,13 @@
+
+\renewcommand{\titlepage}
+{
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[darkgray] (current page.north west) rectangle ++(\paperwidth,-0.3\paperheight);
+		\node[\mainColor, yshift=-0.15\paperheight, font=\Huge] at (current page.north) {\doctitle};
+		\node[gray, yshift=0.1\paperheight, font=\Large] at (current page.center) {\docauthor};
+		\node[gray, yshift=-0.0\paperheight, font=\normalsize] at (current page.center) {\DTMusedate{docdate}};
+		\node[yshift=0.225\paperheight] at (current page.south) {\includegraphics[height=0.35\paperheight]{\netzlogo}};
+	\end{tikzpicture}
+\end{frame}
+}
